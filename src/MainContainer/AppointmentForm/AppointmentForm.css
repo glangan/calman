@@ -10,3 +10,10 @@ fieldset label {
 fieldset button {
     margin: 20px auto;
 }
+
+.error {
+    margin: 0;
+    padding: 0;
+    font-size: 0.75em;
+    color: #FF3B3F;
+}
