@@ -11,6 +11,24 @@ fieldset button {
     margin: 20px auto;
 }
 
+fieldset input[type="text"] {
+    border: none;
+    padding-left: 0;
+}
+
+fieldset input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    opacity: 0.3;
+}
+fieldset input::-moz-placeholder { /* Firefox 19+ */
+    opacity: 0.3;
+}
+fieldset input:-ms-input-placeholder { /* IE 10+ */
+    opacity: 0.3;
+}
+fieldset input:-moz-placeholder { /* Firefox 18- */
+    opacity: 0.3;
+}
+
 .error {
     margin: 0;
     padding: 0;
