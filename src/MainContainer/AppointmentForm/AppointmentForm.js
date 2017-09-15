@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import MuiThemeProvide from 'material-ui/styles/MuiThemeProvider';
 import DatePicker from 'material-ui/DatePicker';
 import TimePicker from 'material-ui/TimePicker';
-import firebase from './firebase';
+import firebase from '../../firebase';
 import './AppointmentForm.css';
 
 class AppointmentForm extends Component {

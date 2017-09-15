@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
 import {auth} from './firebase';
-import Header from './Header';
-import Footer from './Footer';
-import MainContainer from './MainContainer';
+import Header from './Header/Header';
+import Footer from './Footer/Footer';
+import MainContainer from './MainContainer/MainContainer';
 
 class App extends Component {
   constructor(props) {

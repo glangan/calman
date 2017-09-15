@@ -1,8 +1,8 @@
 import React from 'react';
 import './MainContainer.css';
-import AppointmentList from './AppointmentList';
-import AppointmentForm from './AppointmentForm';
-import Login from './Login';
+import AppointmentList from './AppointmentList/AppointmentList';
+import AppointmentForm from './AppointmentForm/AppointmentForm';
+import Login from './Login/Login';
 
 const MainComponent = (props) => {
   let rightContent;

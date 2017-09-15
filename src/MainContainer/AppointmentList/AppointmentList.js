@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
-import firebase from './firebase';
+import firebase from '../../firebase';
 import map from 'lodash/map';
-import AppointmentItem from './AppointmentItem'
+import AppointmentItem from './AppointmentItem/AppointmentItem'
 
 class AppointmentList extends Component {
   constructor(props) {
