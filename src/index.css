@@ -1,5 +1,10 @@
 body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+  background-color: #EFEFEF;
+  font-family: 'Dosis', sans-serif;
+  height: 100%;
+}
+
+button {
+  background-color: #FF3B3F;
+  border: 1px #FF3B3F;
 }

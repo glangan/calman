@@ -1,0 +1,15 @@
+.main_container {
+    margin-top: 20px;
+}
+
+.container_column {
+    background-color: #CAEBF2;
+    margin-right: 10px;
+    height: 600px;
+    padding: 10px;
+}
+
+.container_column h4 {
+    padding: 20px;
+    text-align: center;
+}

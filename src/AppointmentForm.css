@@ -1,0 +1,12 @@
+form {
+    padding: 20px;
+}
+
+fieldset label {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+fieldset button {
+    margin: 20px auto;
+}

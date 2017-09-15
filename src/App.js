@@ -1,18 +1,46 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import {auth} from './firebase';
+import Header from './Header';
+import Footer from './Footer';
+import MainContainer from './MainContainer';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      user: null
+    };
+    this.handleLogin = this.handleLogin.bind(this);
+    this.handleLogOut = this.handleLogOut.bind(this);
+  }
+
+  handleLogin(loggedInUser) {
+    this.setState({
+      user: loggedInUser
+    })
+  }
+
+  handleLogOut() {
+    this.setState({user: null})
+  }
+
+  componentDidMount() {
+    auth.onAuthStateChanged((user) => {
+      if (user) {
+        this.setState({user})
+      } else {
+        this.setState({user: null})
+      }
+    })
+  }
+
   render() {
     return (
       <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <Header user={this.state.user} handleLogout={this.handleLogOut} />
+        <MainContainer user={this.state.user} handleLogin={this.handleLogin}/>
+        <Footer />
       </div>
     );
   }

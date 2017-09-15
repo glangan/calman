@@ -1,0 +1,16 @@
+.item {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 1rem 1.5rem;
+    margin:20px 10px;
+}
+
+.item h5 {
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+}
+
+.item p {
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
